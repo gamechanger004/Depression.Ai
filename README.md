@@ -9,8 +9,10 @@ Depression.AI is designed to help identify signs of depression in users through 
 ## Features
    **Questionnaire-based Assessment:**
       Based on Beck Depression Inventory (BDI) and Patient Health Questionnaire-6 (PHQ-6).Uses SVM classifier for accurate depression detection.
+  
    **Text Analysis:**
       Processes user-written text.Employs Bag of Words model to detect signs of depression.
+   
    **User-Friendly Interface:** 
       Simple and intuitive interface for users to complete the questionnaire and submit text for analysis.
 
