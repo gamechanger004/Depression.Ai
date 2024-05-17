@@ -24,6 +24,7 @@ To install and run Depression.AI, follow these steps:
 
 ## Clone the repository:
 git clone https://github.com/gamechanger004/depression.ai.git
+
 cd depression.ai
 
 ## Install the required dependencies:
