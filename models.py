@@ -32,7 +32,7 @@ class Model:
         df['class'] = df['class'].fillna(df['class'].mode()[0])
 
         self.split_data(df)
-
+    #spliting data
     def split_data(self,df):
         x = df.iloc[:, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]].values
         y = df.iloc[:, 10].values
