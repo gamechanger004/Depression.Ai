@@ -72,4 +72,4 @@ def predict():
     return render_template("result.html", result=result)
 
 app.secret_key = os.urandom(12)
-app.run( host='0.0.0.0', debug=False)
+app.run(port=8080, host='0.0.0.0', debug=False)
