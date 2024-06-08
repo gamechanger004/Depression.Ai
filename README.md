@@ -39,5 +39,5 @@ python server.py
    - *Note : Username and password can be chnaged in server.py file
 
 ## Contributing
-We welcome contributions from the community! If you'd like to contribute, please follow these steps:
+We welcome contributions from the community! feel free to contribute.
 
