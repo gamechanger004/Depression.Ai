@@ -83,10 +83,6 @@ SecretStorage
 selenium
 singledispatch
 six
-<<<<<<< HEAD
-=======
-sklearn
->>>>>>> a2f9d9758e9c35afb102fae82990915574d2f72a
 subprocess32
 
 tensorflow
