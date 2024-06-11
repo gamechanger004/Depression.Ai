@@ -5,19 +5,14 @@ FROM python:3-alpine3.12
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
-
+COPY . /app
+RUN apt-get update && apt-get install -y libgl1-mesa-glx
 # Install the dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code into the container
-COPY . .
+RUN pip install -r requirements.txt
+RUN pip install gunicorn
 
 # Expose the port that the Flask app will run on
-EXPOSE 5000
-
-# Define the environment variable for Flask
-ENV FLASK_APP=server.py
+EXPOSE 8080
 
 # Command to run the Flask application
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["gunicorn","--blind", "0.0.0.0:8080","app:app"]
