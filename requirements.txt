@@ -6,7 +6,7 @@ astor
 backports.functools-lru-cache
 backports.weakref
 bidaf-keras
-
+gunicorn
 certifi
 chardet
 
