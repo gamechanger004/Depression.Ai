@@ -28,6 +28,7 @@ future
 gast
 google-pasta
 grpcio
+gunicorn
 h5py
 idna
 importlib-metadata
